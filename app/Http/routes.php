@@ -25,6 +25,10 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
+Route::get('/calendar', function () {
+    return view('calendar');
+});
+
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
