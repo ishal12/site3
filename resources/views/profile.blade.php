@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', '| Contact Us')
+@section('title', '| Profile')
 
 @section('class', 'profile')
 

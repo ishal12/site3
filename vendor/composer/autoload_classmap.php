@@ -7,9 +7,9 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'AddJabatanidToUsers' => $baseDir . '/database/migrations/2016_12_09_175911_add_jabatanid_to_users.php',
-    'AddKalabidToLaboratoriums' => $baseDir . '/database/migrations/2016_12_09_193821_add_kalabid_to_laboratoriums.php',
     'CreateAdminsTable' => $baseDir . '/database/migrations/2016_12_08_065225_create_admins_table.php',
     'CreateDosensTable' => $baseDir . '/database/migrations/2016_12_09_034544_create_dosens_table.php',
+    'CreateFeedbacksTable' => $baseDir . '/database/migrations/2016_12_09_214017_create_feedbacks_table.php',
     'CreateJabatansTable' => $baseDir . '/database/migrations/2016_12_09_034459_create_jabatans_table.php',
     'CreateKategorisTable' => $baseDir . '/database/migrations/2016_12_09_034927_create_kategoris_table.php',
     'CreateLaboratoriumsTable' => $baseDir . '/database/migrations/2016_12_09_034744_create_laboratoriums_table.php',

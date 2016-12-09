@@ -4,21 +4,6 @@
 
 @section('class', 'profile')
 
-@section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-10 col-md-offset-1">
-            <div class="panel panel-default">
-                <div class="panel-heading">Welcome</div>
-
-                <div class="panel-body">
-                    Contact Us.
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-@endsection
 
 @section('news')
     <div class="container">
@@ -30,15 +15,9 @@
                             <legend class="text-center header2">Contact us</legend>
                             <div class="form-group">
                                 <div class="col-md-10 col-md-offset-1">
-                                    <input id="fname" name="name" type="text" placeholder="Nama Depan" class="form-control">
+                                    <input id="name" name="name" type="text" placeholder="Nama" class="form-control">
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <div class="col-md-10 col-md-offset-1">
-                                    <input id="lname" name="name" type="text" placeholder="Nama Belakang" class="form-control">
-                                </div>
-                            </div>
-
                             <div class="form-group">
                                 <div class="col-md-10 col-md-offset-1">
                                     <input id="email" name="email" type="text" placeholder="Email Address" class="form-control">
@@ -78,7 +57,7 @@
                             60246<br />
                             mail@ubaya.ac.id<br /><br />
                                 <div class="map">
-                                    <iframe src="http://www.map-embed.com/mapsv3.php?w=600&h=600&q=UBAYA Tenggilis-ATM Mandiri, Kali Rungkut, Surabaya City, East Java, Indonesia, &z=14&t=" width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a class="google-map-code" href="https://www.google.com/maps?ll=-7.306675,112.764637&z=14&t=m&hl=en-GB&gl=US&mapclient=embed&q=UBAYA+Tenggilis-ATM+Mandiri,+Kali+Rungkut,+Surabaya+City,+East+Java,+Indonesia," id="get-map-data">UBAYA Ngagel </a></iframe>
+                                    <iframe src="http://www.map-embed.com/mapsv3.php?w=600&h=600&q=UBAYA Tenggilis-ATM Mandiri, Kali Rungkut, Surabaya City, East Java, Indonesia, &z=14&t=" width="100%" height="335" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a class="google-map-code" href="https://www.google.com/maps?ll=-7.306675,112.764637&z=14&t=m&hl=en-GB&gl=US&mapclient=embed&q=UBAYA+Tenggilis-ATM+Mandiri,+Kali+Rungkut,+Surabaya+City,+East+Java,+Indonesia," id="get-map-data">UBAYA Ngagel </a></iframe>
                                 </div>
                             </div>
                             <hr />
