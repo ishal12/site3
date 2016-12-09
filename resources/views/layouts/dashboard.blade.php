@@ -120,25 +120,25 @@
 	                </li>
 	                <li class="@yield('activeu')">
 	                    <a href="{{url('admin/user')}}">
-	                        <i class="material-icons">person</i>
+	                        <i class="material-icons">person_outline</i>
 	                        <p>Users</p>
 	                    </a>
 	                </li>
 	                <li class="@yield('activej')">
 	                    <a href="{{url('admin/jabatan')}}">
-	                        <i class="material-icons">person</i>
+	                        <i class="material-icons">work</i>
 	                        <p>Jabatan</p>
 	                    </a>
 	                </li>
 	                <li class="@yield('activel')">
 	                    <a href="{{url('admin/laboratorium')}}">
-	                        <i class="material-icons">person</i>
+	                        <i class="material-icons">desktop_windows</i>
 	                        <p>Laboratorium</p>
 	                    </a>
 	                </li>
 	                <li class="@yield('activem')">
 	                    <a href="{{url('admin/user')}}">
-	                        <i class="material-icons">person</i>
+	                        <i class="material-icons">note</i>
 	                        <p>Matakuliah</p>
 	                    </a>
 	                </li>
