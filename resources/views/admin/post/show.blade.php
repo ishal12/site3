@@ -17,8 +17,9 @@
                             @if(Auth::guard('admin')->user())
                                 <a class="btn btn-danger" href="{{url('admin/post')}}" role="button">Kembali</a>
                             @endif
-
-                            <img src="{{asset('images/'.$post->foto)}}"/>
+                            @if($post->foto != '')
+                                <img src="{{asset('images/'.$post->foto)}}"/>
+                            @endif
                             <h1>{{$post->judul}}</h1>
                             <h4>{{$post->isi}}</h4>
                             <p>Created at: {{date('M j, Y h:ia', strtotime($post->created_at))}}</p>
