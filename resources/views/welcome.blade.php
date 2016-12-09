@@ -32,21 +32,19 @@
                                                 <!-- Wrapper for slides -->
                                                 <div class="carousel-inner">
                                                     <div class="item active">
-                                                        <img src="{{URL::asset('img/bg2.jpeg')}}" alt="Awesome Image">
+                                                        <img src="{{URL::asset('img/gb2.jpg')}}" alt="Awesome Image">
+                                                        
+                                                    </div>
+                                                    <div class="item">
+                                                        <img src="{{URL::asset('img/gb4.jpg')}}" alt="Awesome Image">
                                                         <div class="carousel-caption">
-                                                            <h4><i class="material-icons">location_on</i> Yellowstone National Park, United States</h4>
+                                                            <h4><i class="material-icons">location_on</i> Kampus 1, Kali Rungkut</h4>
                                                         </div>
                                                     </div>
                                                     <div class="item">
-                                                        <img src="{{URL::asset('img/bg3.jpeg')}}" alt="Awesome Image">
+                                                        <img src="{{URL::asset('img/gb3.jpg')}}" alt="Awesome Image">
                                                         <div class="carousel-caption">
-                                                            <h4><i class="material-icons">location_on</i> Somewhere Beyond, United States</h4>
-                                                        </div>
-                                                    </div>
-                                                    <div class="item">
-                                                        <img src="{{URL::asset('img/bg4.jpeg')}}" alt="Awesome Image">
-                                                        <div class="carousel-caption">
-                                                            <h4><i class="material-icons">location_on</i> Yellowstone National Park, United States</h4>
+                                                            <h4><i class="material-icons">location_on</i> Kampus 2, Ngagel</h4>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -71,19 +69,14 @@
 
 @section('news')
                     <div class="row">
-                        <div class="col-md-4">
-                            <h2>Latest News</h2>
+                        <div class="col-md-6">
+                            <h2>Berita</h2>
                             <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
                             <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
                         </div>
-                        <div class="col-md-4">
-                            <h2>Article</h2>
+                        <div class="col-md-6">
+                            <h2>Artikel</h2>
                             <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-                        </div>
-                        <div class="col-md-4">
-                            <h2>Interview</h2>
-                            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
                             <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
                         </div>
                     </div>

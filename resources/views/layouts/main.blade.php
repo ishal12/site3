@@ -23,7 +23,7 @@
 <body class="@yield('class')-page">
     @include('partials._nav')
     <div class="wrapper">
-        <div class="header header-filter" style="background-image: url('{{URL::asset('img/bg2.jpeg')}}');">
+        <div class="header header-filter" style="background-image: url('{{URL::asset('img/slider.jpg')}}');">
             <div class="container">
                 <div class="row">
                     @yield('judul')
