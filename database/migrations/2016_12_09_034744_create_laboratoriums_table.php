@@ -16,7 +16,7 @@ class CreateLaboratoriumsTable extends Migration
             $table->increments('id');
             $table->string('nama');
             $table->integer('kalabid')->unsigned();
-            $table->foreign('kalabid')->references('id')->on('dosens');
+            $table->foreign('kalabid')->references('id')->on('users');
             $table->timestamps();
         });
     }

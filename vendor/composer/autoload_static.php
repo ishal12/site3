@@ -291,6 +291,7 @@ class ComposerStaticInitc5f4bd4e748f5481f0b7ba56d0eb851a
 
     public static $classMap = array (
         'AddJabatanidToUsers' => __DIR__ . '/../..' . '/database/migrations/2016_12_09_175911_add_jabatanid_to_users.php',
+        'AddKalabidToLaboratoriums' => __DIR__ . '/../..' . '/database/migrations/2016_12_09_193821_add_kalabid_to_laboratoriums.php',
         'CreateAdminsTable' => __DIR__ . '/../..' . '/database/migrations/2016_12_08_065225_create_admins_table.php',
         'CreateDosensTable' => __DIR__ . '/../..' . '/database/migrations/2016_12_09_034544_create_dosens_table.php',
         'CreateJabatansTable' => __DIR__ . '/../..' . '/database/migrations/2016_12_09_034459_create_jabatans_table.php',
