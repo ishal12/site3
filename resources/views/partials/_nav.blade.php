@@ -17,7 +17,7 @@
                     <li ><a href="#">Berita</a></li>
                     <li><a href="#">Event</a></li>
                     <li><a href="{{url('profile')}}">Profile</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="{{url('contact')}}">Contact Us</a></li>
                     <li><a href="#">Share Hosting</a></li>
                 </ul>
 		    	<ul class="nav navbar-nav navbar-right">
