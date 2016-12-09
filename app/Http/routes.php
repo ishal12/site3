@@ -15,6 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/', 'BlogController@getBerita');
 
 Route::get('/profile', function () {
     return view('profile');

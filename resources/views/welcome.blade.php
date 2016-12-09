@@ -70,14 +70,28 @@
 @section('news')
                     <div class="row">
                         <div class="col-md-6">
-                            <h2>Berita</h2>
-                            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                            @foreach($posts as $post)
+                                @if($post->kategoriid == 1)
+                                    <h2>{{ $post->judul}}</h2>
+                                    @if($post->foto != '')
+                                        <img src="{{asset('images/'.$post->foto)}}" alt="Raised Image" class="img-rounded img-responsive img-raised"/>
+                                    @endif
+                                    <p>{{ $post->isi }}</p>
+                                    <p><a class="btn btn-default" href="{{url('admin/post', $post->id)}}" role="button">View details &raquo;</a></p>
+                                @endif
+                            @endforeach
                         </div>
                         <div class="col-md-6">
-                            <h2>Event</h2>
-                            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                            @foreach($events as $event)
+                                @if($event->kategoriid == 2)
+                                    <h2>{{ $event->judul}}</h2>
+                                    @if($event->foto != '')
+                                        <img src="{{asset('images/'.$event->foto)}}" alt="Raised Image" class="img-rounded img-responsive img-raised"/><br>
+                                    @endif
+                                    <p>{{ $event->isi }}</p>
+                                    <p><a class="btn btn-default" href="{{url('admin/post', $event->id)}}" role="button">View details &raquo;</a></p>
+                                @endif
+                            @endforeach
                         </div>
                     </div>
 @endsection
