@@ -14,8 +14,11 @@
 
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		    	<ul class="nav navbar-nav">
-                    <li ><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
+                    <li ><a href="#">Berita</a></li>
+                    <li><a href="#">Event</a></li>
+                    <li><a href="{{url('profile')}}">Profile</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Share Hosting</a></li>
                 </ul>
 		    	<ul class="nav navbar-nav navbar-right">
 					@if(Auth::guard('admin')->user())

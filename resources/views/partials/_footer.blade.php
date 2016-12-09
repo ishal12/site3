@@ -12,15 +12,10 @@
                                Contact Us
                             </a>
                         </li>
-                        <li>
-                            <a href="#">
-                               Blog
-                            </a>
-                        </li>
                     </ul>
                 </nav>
                 <div class="copyright pull-right">
-                    &copy; 2016 | Web Framework Programing - UBAYA by Ishal, Rama & Lucas.
+                    &copy; 2016 | Web Framework Programing - UBAYA by Faishal, Rama & Lucas.
                 </div>
             </div>
         </footer>

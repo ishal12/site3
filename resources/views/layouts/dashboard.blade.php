@@ -124,12 +124,6 @@
 	                        <p>Users</p>
 	                    </a>
 	                </li>
-	                <li class="@yield('activedo')">
-	                    <a href="{{url('admin/user')}}">
-	                        <i class="material-icons">person</i>
-	                        <p>Dosen</p>
-	                    </a>
-	                </li>
 	                <li class="@yield('activej')">
 	                    <a href="{{url('admin/jabatan')}}">
 	                        <i class="material-icons">person</i>
