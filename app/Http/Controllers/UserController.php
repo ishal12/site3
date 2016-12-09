@@ -8,6 +8,8 @@ use App\Http\Requests;
 
 use App\User;
 
+use App\Jabatan;
+
 use Session;
 
 use Hash;
@@ -37,7 +39,8 @@ class UserController extends Controller
      */
     public function create()
     {
-        return view('admin.user.create');
+        $jabatans = Jabatan::all();
+        return view('admin.user.create')->withJabatans($jabatans);
     }
 
     /**
@@ -52,6 +55,7 @@ class UserController extends Controller
                 'id' => 'required',
                 'name' => 'required|max:255',
                 'email' => 'required|email|max:255|unique:users',
+                'jabatanid' => 'required|integer',
                 'password' => 'required|min:6|confirmed',
             ));
 
@@ -60,6 +64,7 @@ class UserController extends Controller
         $user->id = $request->id;
         $user->name = $request->name;
         $user->email = $request->email;
+        $user->jabatanid = $request->jabatanid;
         $user->password = Hash::make($request->password);
 
         $user->save();
@@ -89,7 +94,12 @@ class UserController extends Controller
     public function edit($id)
     {
         $user = User::find($id);
-        return view('admin.user.edit')->withUser($user);
+        $jabatans = Jabatan::all();
+        $jabs = array();
+        foreach ($jabatans as $jabatan){
+            $jabs[$jabatan->id] = $jabatan->nama;
+        }
+        return view('admin.user.edit')->withUser($user)->withJabatans($jabs);
     }
 
     /**
@@ -101,7 +111,25 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $this->validate($request, array(
+                'id' => 'required',
+                'name' => 'required|max:255',
+                'email' => 'required|email|max:255|unique:users',
+                'jabatanid' => 'required|integer',
+            ));
+
+        $user = User::find($id);
+
+        $user->id = $request->input('id');
+        $user->name = $request->input('name');
+        $user->email = $request->input('email');
+        $user->jabatanid = $request->input('jabatanid');
+
+        $user->save();
+
+        Session::flash('usuccess', 'Data berhasil diubah!');
+        //mahasiswa::create(Request::all());
+        return redirect()->route('admin.user.index');
     }
 
     /**

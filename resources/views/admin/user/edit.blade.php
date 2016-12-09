@@ -65,7 +65,18 @@
                         </div>
                     </div>
 
-                    <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
+                    <div class="form-group">
+                        {{ Form::label('Jabatan', null, ['class' => 'col-md-4 control-label']) }}
+                        
+
+                        <div class="col-md-6">
+
+                                {{ Form::select('jabatanid', $jabatans, null, ['class' => 'form-control']) }}
+
+                        </div>
+                    </div>
+
+                    <!--<div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
                     	{{ Form::label('Password', null, ['class' => 'col-md-4 control-label']) }}
                         
 
@@ -95,7 +106,7 @@
                                 </span>
                             @endif
                         </div>
-                    </div>
+                    </div>-->
 
                     <div class="form-group">
                         <div class="col-md-6 col-md-offset-4">

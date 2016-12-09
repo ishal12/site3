@@ -6,9 +6,9 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable
 {
-    public function jabatan()
+    public function jabatans()
     {
-        return $this->belongsTo('App\Jabatan');
+        return $this->belongsTo('App\Jabatan', 'jabatanid', 'id');
     }
     /**
      * The attributes that are mass assignable.

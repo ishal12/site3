@@ -8,7 +8,7 @@ class Jabatan extends Model
 {
     protected $table = 'jabatans';
 	
-	public function user(){
+	public function users(){
 		return $this->hasMany('App\User');
 	}
 
