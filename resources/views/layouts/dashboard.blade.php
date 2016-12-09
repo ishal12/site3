@@ -137,7 +137,7 @@
 	                    </a>
 	                </li>
 	                <li class="@yield('activel')">
-	                    <a href="{{url('admin/user')}}">
+	                    <a href="{{url('admin/laboratorium')}}">
 	                        <i class="material-icons">person</i>
 	                        <p>Laboratorium</p>
 	                    </a>

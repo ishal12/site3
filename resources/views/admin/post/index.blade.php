@@ -9,11 +9,11 @@
         <div class="card card-plain">
             <div class="card-header" data-background-color="purple">
                 <div class="row">
-                    <div class="col-lg-10">
+                    <div class="col-lg-9">
                         <h4 class="title">All Post</h4>
                         <p class="category">blablabla</p>
                     </div>
-                    <div class="col-lg-2">
+                    <div class="col-lg-3">
                         <a class="btn btn-success btn-lg" href="{{url('admin/post/create')}}" role="button">Tambah Post</a>
                     </div>
                 </div>

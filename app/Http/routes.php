@@ -42,4 +42,5 @@ Route::resource('admin/user', 'UserController');
 Route::resource('admin/post', 'PostController');
 Route::resource('admin/kategori', 'KategoriController');
 Route::resource('admin/jabatan', 'JabatanController');
+Route::resource('admin/laboratorium', 'LaboratoriumController');
 
